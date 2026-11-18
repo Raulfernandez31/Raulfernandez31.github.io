@@ -1,0 +1,167 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    margin: 0;
+    padding: 24px;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.laliga-icon {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.title-wrapper h1 {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.season {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.main-nav {
+    background-color: #f1f3f5;
+    padding: 4px;
+    border-radius: 24px;
+    display: flex;
+    gap: 4px;
+}
+
+.nav-btn {
+    background: transparent;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.nav-btn.active {
+    background-color: var(--card-bg);
+    color: var(--text-main);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.main-content {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.date-header {
+    font-size: 0.95rem;
+    color: var(--text-main);
+    margin-bottom: 10px;
+}
+
+.match-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    gap: 16px;
+}
+
+.match-card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    border: 1px solid var(--border-color);
+}
+
+.match-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-grow: 1;
+    border-right: 1px solid var(--border-color);
+    padding-right: 20px;
+}
+
+.competition {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.teams {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.team {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.team-name {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.match-time {
+    padding-left: 20px;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: 500;
+    min-width: 50px;
+    text-align: center;
+}
+.boton-volver {
+position: absolute;
+top: 20px;
+left: 20px;
+background: black;
+color: white;
+border: 1px solid #ddd;
+border-radius: 8px;
+padding: 8px 16px;
+font-size: 25px;
+cursor: pointer;
+transition: 0.2s;
+}
+.boton-volver:hover {
+  background: #e5e5e5;
+}
+.boton-volver a {
+  color: white;
+  text-decoration: none;
+}
+
+.boton-volver:hover a {
+  color: black;
+}
+a {
+    text-decoration: none;
+}
+header nav a {
+    text-decoration: none;
+}
